@@ -23,7 +23,7 @@ function isValid (letter) {
         && openParenthesis > 0
     	&& closeParenthesis > 0
         && !letter.match (/\[\[{}/g) //expresion regular / si existe esta cadena retorna false
-        && !letter.match (/[(]\w+[)]|[(][)]/) //expresion regular / si existe esta cadena retorna false
+        && !letter.match (/[(]\w+a+b+c[ )]|[(][ )]/) //expresion regular / si existe esta cadena retorna false
      ) {
     return true
   } else {
